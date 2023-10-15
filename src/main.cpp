@@ -5,7 +5,7 @@
 #include "../include/Fruit.h"
 #include "../include/Snake.h"
 
-#define VELOCITY 25.f
+constexpr float VELOCITY = 25.f;
 
 #define WIDTH  800
 #define HEIGHT 600
@@ -60,7 +60,7 @@ int main()
             tick++;
 
             // rendering
-            window.clear();
+            window.clear(sf::Color::White);
             backg.drawBackg(window);
             fruit.drawFruit(window);
             snake.drawSnake(window);

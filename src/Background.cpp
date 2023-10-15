@@ -3,7 +3,7 @@
 void Background::drawBackg(sf::RenderWindow& win)
 {
     unsigned int row = WIDTH / background.getSize().x;
-    unsigned int column = HEIGHT / background.getSize().x - 2;
+    unsigned int column = HEIGHT / background.getSize().y;
 
     for (size_t i = 0; i < row; i++)
     {
