@@ -1,12 +1,13 @@
 # Snake-Game
 
-### A simle snake game written in C++
+### A simple snake game written in C++
 
 ---
 
 ## Dependencies
-- SFML Library
-- C++ Compiler (gcc)
+- C++ compiler
+- CMake >= 3.16
+
 
 ---
 
@@ -20,21 +21,13 @@
 
 ---
 
-## Linux build
+## Build
 
-1. Install sfml: `sudo apt-get install libsfml-dev`
-
-   Install GNU Make (if not installed): `sudo apt-get install make`
-
-2. Clone repository: `git clone https://github.com/Karansemwal/Pong-Clone.git`
-
-3. `cd <path to project>`
-
-4. `mkdir bin`
-
-5. Build src : `make g++`
-6. Run game : `make run`
-
+1. Clone repository `git clone https://github.com/Karansemwal/Snake-Game.git`
+2. `cd Snake-Game`
+3. `mkdir build`
+4. Generate build `cmake -S . -B build`
+5. Build project `cmake --build build`
 
 ---
 
