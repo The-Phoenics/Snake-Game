@@ -1,5 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "Global.h"
 
 #define WIDTH  800
 #define HEIGHT 600
@@ -22,7 +23,7 @@ public:
 private:
     void initBackg()
     {
-        backgText.loadFromFile("./src/resources/grass.png");
+        backgText.loadFromFile(RESOURCE_PATH + std::string{ "/resources/grass.png" });
         background.setSize(sf::Vector2f(25.f, 25.f));
         background.setTexture(&backgText);
     }

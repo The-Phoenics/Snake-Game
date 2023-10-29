@@ -1,9 +1,8 @@
 #include <SFML/Graphics.hpp>
-#include <iostream>
 #include <vector>
-#include "../include/Background.h"
-#include "../include/Fruit.h"
-#include "../include/Snake.h"
+#include "Background.h"
+#include "Fruit.h"
+#include "Snake.h"
 
 constexpr float VELOCITY = 25.f;
 

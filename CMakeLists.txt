@@ -18,6 +18,8 @@ add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 target_link_libraries(${PROJECT_NAME} PRIVATE sfml-graphics)
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)
 
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+
 if(WIN32)
     add_custom_command(
         TARGET ${PROJECT_NAME}

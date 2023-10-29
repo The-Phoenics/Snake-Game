@@ -1,4 +1,4 @@
-#include "../include/Background.h"
+#include "Background.h"
 
 void Background::drawBackg(sf::RenderWindow& win)
 {

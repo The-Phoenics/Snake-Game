@@ -1,4 +1,5 @@
-#include "../include/Snake.h"
+#include "Snake.h"
+#include "Global.h"
 
 Snake::Snake()
     : dir{3}, m_scoreValue{0}
@@ -11,12 +12,12 @@ Snake::Snake()
 
 void Snake::initSnake()
 {
-    m_snakeText.loadFromFile("./src/resources/snake_sprite.png");
+    m_snakeText.loadFromFile(RESOURCE_PATH + std::string{ "/resources/snake_sprite.png" });
     m_snake.setTexture(&m_snakeText);
     m_snake.setPosition(coords[0]);
     m_snake.setSize(sf::Vector2f(25.f, 25.f));
 
-    m_scoreFont.loadFromFile("./src/resources/OpenSans-Regular.ttf");
+    m_scoreFont.loadFromFile(RESOURCE_PATH + std::string{ "/resources/OpenSans-Regular.ttf" });
 
     m_score.setFont(m_scoreFont);
     m_score.setPosition(25.f, 20.f);

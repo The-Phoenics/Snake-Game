@@ -1,9 +1,10 @@
-#include "../include/Fruit.h"
+#include "Fruit.h"
+#include "Global.h"
 #include <random>
 
 void Fruit::initFruit()
 {
-    m_fruitText.loadFromFile("./src/resources/fruit.png");
+    m_fruitText.loadFromFile(RESOURCE_PATH + std::string{ "/resources/fruit.png" });
     m_fruit.setTexture(&m_fruitText);
     m_fruit.setSize(sf::Vector2f(25.f, 25.f));
     m_fruit.setPosition(200.f, 200.f);
